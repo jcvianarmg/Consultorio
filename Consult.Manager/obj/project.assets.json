@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Consult.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Consult.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consult.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Consult.Core/1.0.0": {
+      "type": "project",
+      "path": "../Consult.Core/Consult.Core.csproj",
+      "msbuildProject": "../Consult.Core/Consult.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Consult.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jcvia\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+      "projectName": "Consult.Manager",
+      "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+      "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+              "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

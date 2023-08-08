@@ -1,0 +1,10 @@
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\bin\Debug\netcoreapp3.1\Consult.Core.deps.json
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\bin\Debug\netcoreapp3.1\Consult.Core.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\bin\Debug\netcoreapp3.1\Consult.Core.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.AssemblyInfo.cs
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core\obj\Debug\netcoreapp3.1\Consult.Core.pdb
