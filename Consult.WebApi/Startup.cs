@@ -2,6 +2,8 @@ using Consult.Data.Context;
 using Consult.Data.Repository;
 using Consult.Manager.Implementation;
 using Consult.Manager.Interfaces;
+using Consult.Manager.Validator;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,9 +31,12 @@ namespace Consult.WebApi
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(p => p.RegisterValidatorsFromAssemblyContaining<PacienteValidator>());
+           
 
             services.AddDbContext<ConsultContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConsConnection")));
 
