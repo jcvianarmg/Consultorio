@@ -1,8 +1,10 @@
 ﻿using Consult.Core.Domain;
+using Consult.Core.Shared.ModelViews;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace Consult.Manager.Interfaces
 {
@@ -14,10 +16,8 @@ namespace Consult.Manager.Interfaces
   
         Task<IEnumerable<Paciente>> GetPacientesAsync();
 
-        Task<Paciente> InsertPacienteAsync(Paciente paciente);
+        Task<Paciente> InsertPacienteAsync(NovoPaciente paciente);
 
-        Task<Paciente> UpdatePacienteAsync(Paciente paciente);
-
-
+        Task<Paciente> UpdatePacienteAsync(AlteraPaciente alteraPaciente);
     }
 }

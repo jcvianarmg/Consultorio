@@ -1,9 +1,10 @@
-﻿using Consult.Core.Domain;
+﻿using Consult.Core.Shared.ModelViews;
 using Consult.Manager.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
 
 namespace Consult.WebApi.Controllers
 {
@@ -31,16 +32,16 @@ namespace Consult.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(Paciente paciente)
+        public async Task<ActionResult> Post(NovoPaciente novoPaciente)
         {
-            var pacienteInserido = await pacienteManager.InsertPacienteAsync(paciente);
-            return CreatedAtAction(nameof(Get), new { id = paciente.Id},pacienteInserido);
+            var pacienteInserido = await pacienteManager.InsertPacienteAsync(novoPaciente);
+            return CreatedAtAction(nameof(Get), new { id = pacienteInserido.Id}, pacienteInserido);
         }
 
         [HttpPut]
-        public async Task<ActionResult> Put(Paciente pacientee)
+        public async Task<ActionResult> Put(AlteraPaciente alteraPaciente)
         {
-            var pacienteAtualizado = await pacienteManager.UpdatePacienteAsync(pacientee);
+            var pacienteAtualizado = await pacienteManager.UpdatePacienteAsync(alteraPaciente);
             if (pacienteAtualizado == null)
             {
                 return NotFound();

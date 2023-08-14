@@ -4,6 +4,61 @@
     "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj": {}
   },
   "projects": {
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+        "projectName": "Consult.Core.Shared",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+        "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -55,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -135,7 +190,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -163,6 +218,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
+              },
               "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
                 "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
               }
@@ -182,6 +240,10 @@
             "FluentValidation.AspnetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             }
           },
           "imports": [
@@ -200,7 +262,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -222,7 +284,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.307\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -248,6 +310,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "FluentValidation.AspnetCore": {
               "target": "Package",
               "version": "[11.3.0, )"
@@ -275,6 +341,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "automapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             }
           },
           "imports": [
@@ -296,7 +366,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     }

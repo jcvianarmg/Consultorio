@@ -19,12 +19,18 @@ namespace Consult.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Consult.Core.Domain.Paciente", b =>
+            modelBuilder.Entity("Consult.Core.Domain.AlteraPaciente", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Criacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DataAtualização")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnType("datetime2");

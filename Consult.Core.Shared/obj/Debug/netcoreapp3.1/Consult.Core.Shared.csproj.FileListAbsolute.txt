@@ -1,0 +1,10 @@
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\bin\Debug\netcoreapp3.1\Consult.Core.Shared.deps.json
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\bin\Debug\netcoreapp3.1\Consult.Core.Shared.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\bin\Debug\netcoreapp3.1\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.AssemblyInfo.cs
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Core.Shared\obj\Debug\netcoreapp3.1\Consult.Core.Shared.pdb

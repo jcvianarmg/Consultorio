@@ -2,22 +2,17 @@ using Consult.Data.Context;
 using Consult.Data.Repository;
 using Consult.Manager.Implementation;
 using Consult.Manager.Interfaces;
+using Consult.Manager.Mappings;
 using Consult.Manager.Validator;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Consult.WebApi
 {
@@ -35,8 +30,15 @@ namespace Consult.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers()
-                .AddFluentValidation(p => p.RegisterValidatorsFromAssemblyContaining<PacienteValidator>());
-           
+                .AddFluentValidation(p =>
+                {
+                    p.RegisterValidatorsFromAssemblyContaining<NovoPacienteValidator>();
+                    p.RegisterValidatorsFromAssemblyContaining<AlteraPacienteValidator>();
+
+                });
+
+            services.AddAutoMapper(typeof(NovoPacienteMappingProfile), typeof(AlteraPacienteMappingProfile));
+
 
             services.AddDbContext<ConsultContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConsConnection")));
 
@@ -46,7 +48,7 @@ namespace Consult.WebApi
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Consultório", Version = "v1"});
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Consultório", Version = "v1" });
             });
         }
 

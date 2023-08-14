@@ -1,0 +1,15 @@
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Manager.deps.json
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Manager.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Manager.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Core.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Core.Shared.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\bin\Debug\netcoreapp3.1\Consult.Core.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.AssemblyInfo.cs
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.csproj.CopyComplete
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Manager\obj\Debug\netcoreapp3.1\Consult.Manager.pdb
