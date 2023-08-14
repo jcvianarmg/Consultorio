@@ -6,9 +6,9 @@ Criado o Repositório "xxxx";
 Controller para a Base de Dados;
 Criados os métodos:  Post, Put e Delete.
 Fluente validation;
-Migration:
-
-----segue o desenvolvimento --
+Migration;
 Model View;
 Automapper;
 DependencyInjection;
+
+----segue o desenvolvimento --
