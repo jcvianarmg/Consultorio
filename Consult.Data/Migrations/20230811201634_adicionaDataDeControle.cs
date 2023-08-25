@@ -14,7 +14,7 @@ namespace Consult.Data.Migrations
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
 
             migrationBuilder.AddColumn<DateTime>(
-                name: "DataAtualização",
+                name: "DataAtualizacao",
                 table: "Pacientes",
                 nullable: true);
         }
@@ -26,7 +26,7 @@ namespace Consult.Data.Migrations
                 table: "Pacientes");
 
             migrationBuilder.DropColumn(
-                name: "DataAtualização",
+                name: "DataAtualizacao",
                 table: "Pacientes");
         }
     }

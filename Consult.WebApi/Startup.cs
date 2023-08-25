@@ -4,6 +4,8 @@ using Consult.Manager.Implementation;
 using Consult.Manager.Interfaces;
 using Consult.Manager.Mappings;
 using Consult.Manager.Validator;
+using Consult.WebApi.Configuration;
+using Consult.WebApi.Controllers;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,55 +27,31 @@ namespace Consult.WebApi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         [Obsolete]
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers()
-                .AddFluentValidation(p =>
-                {
-                    p.RegisterValidatorsFromAssemblyContaining<NovoPacienteValidator>();
-                    p.RegisterValidatorsFromAssemblyContaining<AlteraPacienteValidator>();
-
-                });
-
-            services.AddAutoMapper(typeof(NovoPacienteMappingProfile), typeof(AlteraPacienteMappingProfile));
-
-
-            services.AddDbContext<ConsultContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConsConnection")));
-
-            services.AddScoped<IPacienteRepository, PacienteRepository>();
-
-            services.AddScoped<IPacienteManager, PacienteManager>();
-
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Consultório", Version = "v1" });
-            });
+            services.AddControllers();
+            services.AddFluentValidationConfiguration();
+            services.AddAutoMapperConfiguration();
+            services.AddDatabaseConfiguration(Configuration);
+            services.AddDependencyInjectionConfiguration();
+            services.AddSwaggerConfiguration();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            app.UseExceptionHandler("/error");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.RoutePrefix = string.Empty;
-                c.SwaggerEndpoint("./swagger/v1/swagger.json", "Cons v1");
-            });
-
+            app.UseDatabaseConfiguration();
+            app.UseSwaggerConfiguration();
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

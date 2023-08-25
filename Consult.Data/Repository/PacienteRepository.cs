@@ -20,24 +20,31 @@ namespace Consult.Data.Repository
         {
             this.context = context;
         }
-        public async Task<IEnumerable<Core.Domain.Paciente>> GetPacientesAsync()
+        public async Task<IEnumerable<Paciente>> GetPacientesAsync()
         {
-            return await context.Pacientes.AsNoTracking().ToListAsync();
+            return await context.Pacientes
+                .Include(p => p.Endereco)
+                .Include(p => p.Telefones)
+                .AsNoTracking().ToListAsync();
         }
 
-        public async Task<Core.Domain.Paciente> GetPacienteAsync(int id)
+        public async Task<Paciente> GetPacienteAsync(int id)
         {
-            return await context.Pacientes.FindAsync(id);
+            return await context.Pacientes
+
+                .Include(p => p.Endereco)
+                .Include(p => p.Telefones)
+                .SingleOrDefaultAsync(p=> p.Id == id);
         }
 
-        public async Task<Core.Domain.Paciente> InsertPacienteAsync(Core.Domain.Paciente paciente)
+        public async Task<Paciente> InsertPacienteAsync(Paciente paciente)
         {
             await context.Pacientes.AddAsync(paciente);
             await context.SaveChangesAsync();
             return paciente;
         }
 
-        public async Task<Core.Domain.Paciente> UpdatePacienteAsync(Core.Domain.Paciente paciente)
+        public async Task<Paciente> UpdatePacienteAsync(Paciente paciente)
         {
             var buscaPaciente = await context.Pacientes.FindAsync(paciente.Id);
             if (buscaPaciente == null)
@@ -56,7 +63,7 @@ namespace Consult.Data.Repository
             await context.SaveChangesAsync();
         }
 
-        public Task<Core.Domain.Paciente> UpdatePacienteAsync(Core.Shared.ModelViews.AlteraPaciente alteraPaciente)
+        public Task<Paciente> UpdatePacienteAsync(Core.Shared.ModelViews.AlteraPaciente alteraPaciente)
         {
             throw new System.NotImplementedException();
         }

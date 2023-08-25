@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iil8ssunBg9XKGmZuxtRTQib71P7bFePXwAyN88rm7K5pfBCTaDHpfLdQMLm3h/EFay4Dn2fN1PDjdNbyu7mnA==",
+  "dgSpecHash": "jS5wno77baanU2nHJGLK6K+rvZcqp5LIfivhWboTPmbBDBx8Hm3Yxl3b5X+3I8rb+YN/NwLp/N+3STJnQOiN3w==",
   "success": true,
-  "projectFilePath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Tests\\Consult.Tests.csproj",
+  "projectFilePath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Tests\\Consult.Tests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jcvia\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\jcvia\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\jcvia\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\jcvia\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\jcvia\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",

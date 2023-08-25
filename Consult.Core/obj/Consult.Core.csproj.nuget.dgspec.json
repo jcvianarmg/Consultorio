@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {}
+    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {}
   },
   "projects": {
-    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
         "projectName": "Consult.Core",
-        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
         "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\obj\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

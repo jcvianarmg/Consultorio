@@ -31,7 +31,7 @@ namespace Consult.Data.Migrations
                     b.Property<DateTime>("Criacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DataAtualização")
+                    b.Property<DateTime?>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataNascimento")

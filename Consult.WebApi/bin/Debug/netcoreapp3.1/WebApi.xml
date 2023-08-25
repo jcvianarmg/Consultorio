@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Consult.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Get">
+            <summary>
+              Retorna todos os pacientes  
+            </summary>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Get(System.Int32)">
+            <summary>
+             Retorna um pacientes pelo id  
+            </summary>
+            <param name="id" example = "2">Id do Paciente</param>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Post(Consult.Core.Shared.ModelViews.NovoPaciente)">
+            <summary>
+            Insere novo Paciente
+            </summary>
+            <param name="novoPaciente"></param>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Put(Consult.Core.Shared.ModelViews.AlteraPaciente)">
+            <summary>
+            Altera um Paciente
+            </summary>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Delete(System.Int32)">
+             <summary>
+             Exclui um Paciente
+             </summary>
+             <param name="id"></param>
+            <remarks>Exclui permanentemente o Paciente da base de dadso.</remarks>
+        </member>
+    </members>
+</doc>

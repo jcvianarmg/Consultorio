@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+      "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
       "projectName": "Consult.Core.Shared",
-      "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+      "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
       "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\obj\\",
+      "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -12,7 +12,7 @@ namespace Consult.Manager.Mappings
         public AlteraPacienteMappingProfile()
         {
             CreateMap<AlteraPaciente, Paciente>()
-              .ForMember(d => d.DataAtualização, o => o.MapFrom(x => DateTime.Now))
+              .ForMember(d => d.DataAtualizacao, o => o.MapFrom(x => DateTime.Now))
               .ForMember(d => d.DataNascimento, o => o.MapFrom(x => x.DataNascimento.Date));
         }
     }

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eKm49tQdVNYGwUoumOVsq1TbWyow7qpD9BrNwJqY/lk=",
+  "Source": "Consult.WebApi",
+  "BasePath": "_content/Consult.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

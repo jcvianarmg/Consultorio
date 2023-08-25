@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Consult.Core.Shared</name>
+    </assembly>
+    <members>
+        <member name="T:Consult.Core.Shared.ModelViews.NovoPaciente">
+            <summary>
+            Objeto para inserção de um novo Paciente
+            </summary>
+        </member>
+    </members>
+</doc>

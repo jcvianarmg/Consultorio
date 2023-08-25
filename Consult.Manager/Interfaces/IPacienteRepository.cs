@@ -10,11 +10,11 @@ namespace Consult.Manager.Interfaces
     public interface IPacienteRepository
     {
         Task DeletePacienteAsync(int id);
-        Task<Core.Domain.Paciente> GetPacienteAsync(int id);
+        Task<Paciente> GetPacienteAsync(int id);
 
         Task<IEnumerable<Core.Domain.Paciente>> GetPacientesAsync();
-        Task<Core.Domain.Paciente> InsertPacienteAsync(Core.Domain.Paciente paciente);
-        Task<Core.Domain.Paciente> UpdatePacienteAsync(Core.Domain.Paciente paciente);
-        Task<Core.Domain.Paciente> UpdatePacienteAsync(Core.Shared.ModelViews.AlteraPaciente alteraPaciente);
+        Task<Paciente> InsertPacienteAsync(Core.Domain.Paciente paciente);
+        Task<Paciente> UpdatePacienteAsync(Core.Domain.Paciente paciente);
+        Task<Paciente> UpdatePacienteAsync(Core.Shared.ModelViews.AlteraPaciente alteraPaciente);
     }
 }

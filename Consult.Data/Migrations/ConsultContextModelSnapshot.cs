@@ -19,7 +19,35 @@ namespace Consult.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Consult.Core.Domain.AlteraPaciente", b =>
+            modelBuilder.Entity("Consult.Core.Domain.Endereco", b =>
+                {
+                    b.Property<int>("PacienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CEP")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Cidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Complemento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Estado")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logradouro")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Numero")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PacienteId");
+
+                    b.ToTable("Enderecos");
+                });
+
+            modelBuilder.Entity("Consult.Core.Domain.Paciente", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,7 +57,7 @@ namespace Consult.Data.Migrations
                     b.Property<DateTime>("Criacao")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DataAtualização")
+                    b.Property<DateTime?>("DataAtualizacao")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DataNascimento")
@@ -39,7 +67,9 @@ namespace Consult.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
 
                     b.Property<string>("Sexo")
                         .IsRequired()
@@ -51,6 +81,15 @@ namespace Consult.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pacientes");
+                });
+
+            modelBuilder.Entity("Consult.Core.Domain.Endereco", b =>
+                {
+                    b.HasOne("Consult.Core.Domain.Paciente", "Paciente")
+                        .WithOne("Endereco")
+                        .HasForeignKey("Consult.Core.Domain.Endereco", "PacienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
