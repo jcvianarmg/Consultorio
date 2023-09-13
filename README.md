@@ -1,9 +1,8 @@
 # Consultório
 
-Histórico
-
+  Histórico 
+  
  Inicio core 3.1
-
  AutoMapper
  Swagger 
  Migrations
