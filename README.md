@@ -1,5 +1,6 @@
 # Consultório
 
+Histórico
 
  Inicio core 3.1
 
