@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj": {}
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
         "projectName": "Consult.Core.Shared",
-        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
         "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\obj\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -59,90 +59,32 @@
         }
       }
     },
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
         "projectName": "Consult.Core",
-        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
         "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\obj\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\Consult.Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\Consult.Data.csproj",
-        "projectName": "Consult.Data",
-        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\Consult.Data.csproj",
-        "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj"
-              },
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
               }
             }
           }
@@ -154,32 +96,86 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\Consult.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\Consult.Data.csproj",
+        "projectName": "Consult.Data",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\Consult.Data.csproj",
+        "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
+              },
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.32, )"
-            },
-            "Microsoft.EntityFrameworkCore.Analyzers": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -202,35 +198,35 @@
         }
       }
     },
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj": {
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
         "projectName": "Consult.Manager",
-        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
         "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\obj\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
               },
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
               }
             }
           }
@@ -242,16 +238,16 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "FluentValidation.AspnetCore": {
+            "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[11.3.0, )"
+              "version": "[10.3.6, )"
             },
             "automapper": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[11.0.1, )"
             }
           },
           "imports": [
@@ -274,38 +270,38 @@
         }
       }
     },
-    "D:\\Users\\jcvia\\source\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj": {
+    "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj",
+        "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj",
         "projectName": "Consult.WebApi",
-        "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj",
+        "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\Consult.WebApi.csproj",
         "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.WebApi\\obj\\",
+        "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
               },
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
               },
-              "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\Consult.Data.csproj": {
-                "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Data\\Consult.Data.csproj"
+              "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\Consult.Data.csproj": {
+                "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Data\\Consult.Data.csproj"
               }
             }
           }
@@ -317,56 +313,56 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[12.0.1, )"
-            },
-            "FluentValidation.AspnetCore": {
-              "target": "Package",
-              "version": "[11.3.0, )"
+              "version": "[10.3.6, )"
             },
             "MicroElements.Swashbuckle.FluentValidation": {
               "target": "Package",
-              "version": "[5.7.0, )"
+              "version": "[5.4.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[5.0.0, )"
             },
             "Serilog.Exceptions": {
               "target": "Package",
-              "version": "[8.4.0, )"
+              "version": "[8.1.0, )"
             },
             "Serilog.Formatting.Compact": {
               "target": "Package",
@@ -374,7 +370,7 @@
             },
             "Serilog.Settings.Configuration": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[3.3.0, )"
             },
             "Serilog.Sinks.Async": {
               "target": "Package",
@@ -386,15 +382,19 @@
             },
             "SerilogTimings": {
               "target": "Package",
-              "version": "[3.0.1, )"
+              "version": "[2.3.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.2.3, )"
             },
             "automapper": {
               "target": "Package",
-              "version": "[12.0.1, )"
+              "version": "[11.0.1, )"
+            },
+            "automapper.extensions.microsoft.dependencyinjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
             }
           },
           "imports": [

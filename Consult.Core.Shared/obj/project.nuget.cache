@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wiYoI0uMxMVrogTCve4LajtTkz8u0t8Ktib4PqKsgEFh+LkTuJKiNBX4EpmOGFsQaSZkG5+UbIROfNuhdtutew==",
+  "dgSpecHash": "xhRcaNIMBzO1iglf6LGFFcoixf/2Xz8FonRcMYrhf2PYjgWmK8aJADj+tENAoaSjOFfqIc+VgQoghfEU/mQIXA==",
   "success": true,
-  "projectFilePath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
+  "projectFilePath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

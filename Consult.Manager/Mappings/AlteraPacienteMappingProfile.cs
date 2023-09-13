@@ -1,19 +1,13 @@
-﻿using Consult.Core.Domain;
-using Consult.Core.Shared.ModelViews;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using AutoMapper;
+﻿using Consult.Core.Shared.ModelViews.Paciente;
 
-namespace Consult.Manager.Mappings
+namespace Consult.Manager.Mappings;
+
+public class AlteraPacienteMappingProfile : Profile
 {
-    public class AlteraPacienteMappingProfile : Profile
+    public AlteraPacienteMappingProfile()
     {
-        public AlteraPacienteMappingProfile()
-        {
-            CreateMap<AlteraPaciente, Paciente>()
-              .ForMember(d => d.DataAtualizacao, o => o.MapFrom(x => DateTime.Now))
-              .ForMember(d => d.DataNascimento, o => o.MapFrom(x => x.DataNascimento.Date));
-        }
+        CreateMap<AlteraPaciente, Paciente>()
+           .ForMember(d => d.UltimaAtualizacao, o => o.MapFrom(_ => DateTime.Now))
+           .ForMember(d => d.DataNascimento, o => o.MapFrom(x => x.DataNascimento.Date));
     }
 }

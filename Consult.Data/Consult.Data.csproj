@@ -1,32 +1,39 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Migrations\20230824151616_add-endereco.cs" />
-    <Compile Remove="Migrations\20230824151616_add-endereco.Designer.cs" />
-    <Compile Remove="Migrations\20230824153414_add-endereco.cs" />
-    <Compile Remove="Migrations\20230824153414_add-endereco.Designer.cs" />
-    <Compile Remove="Migrations\20230824153702_add-endereco.cs" />
-    <Compile Remove="Migrations\20230824153702_add-endereco.Designer.cs" />
-    <Compile Remove="Migrations\20230824155128_add-endereco.cs" />
-    <Compile Remove="Migrations\20230824155128_add-endereco.Designer.cs" />
-  </ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Migrations\20201011211841_teste.cs" />
+	  <Compile Remove="Migrations\20201011211841_teste.Designer.cs" />
+	  <Compile Remove="Migrations\20201011213535_tamanho-nome.cs" />
+	  <Compile Remove="Migrations\20201011213535_tamanho-nome.Designer.cs" />
+	  <Compile Remove="Migrations\20201013231244_add-endereco.cs" />
+	  <Compile Remove="Migrations\20201013231244_add-endereco.Designer.cs" />
+	  <Compile Remove="Migrations\20201013231416_add-endereco.cs" />
+	  <Compile Remove="Migrations\20201013231416_add-endereco.Designer.cs" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.32" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.32" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.32" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="6.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.32" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.32" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Consult.Core\Consult.Core.csproj" />
-    <ProjectReference Include="..\Consult.Manager\Consult.Manager.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Consult.Core\Consult.Core.csproj" />
+		<ProjectReference Include="..\Consult.Manager\Consult.Manager.csproj" />
+	</ItemGroup>
 
+	<ItemGroup>
+		<Using Include="Consult.Core.Domain"/>
+		<Using Include="Microsoft.EntityFrameworkCore"/>
+		<Using Include="Consult.Data.Context"/>
+		<Using Include="Consult.Manager.Interfaces.Repositories"/>
+		<Using Include="Microsoft.Extensions.Logging"/>
+		<Using Include="Consult.Manager.Interfaces.Services"/>
+	</ItemGroup>
 </Project>

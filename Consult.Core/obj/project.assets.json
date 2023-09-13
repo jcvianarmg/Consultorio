@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    "net6.0": {
+      "Consult.Core.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Consult.Core.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consult.Core.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Consult.Core.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Consult.Core.Shared/Consult.Core.Shared.csproj",
+      "msbuildProject": "../Consult.Core.Shared/Consult.Core.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    "net6.0": [
+      "Consult.Core.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jcvia\\.nuget\\packages\\": {}
@@ -13,27 +32,31 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+      "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
       "projectName": "Consult.Core",
-      "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj",
+      "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj",
       "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\obj\\",
+      "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+              "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -43,8 +66,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",

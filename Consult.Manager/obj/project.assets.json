@@ -1,8 +1,8 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "AutoMapper/12.0.1": {
+    "net6.0": {
+      "AutoMapper/11.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0"
@@ -18,32 +18,32 @@
           }
         }
       },
-      "FluentValidation/11.5.1": {
+      "FluentValidation/10.3.6": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/FluentValidation.dll": {
+          "lib/net6.0/FluentValidation.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.1/FluentValidation.dll": {
+          "lib/net6.0/FluentValidation.dll": {
             "related": ".xml"
           }
         }
       },
-      "FluentValidation.AspNetCore/11.3.0": {
+      "FluentValidation.AspNetCore/10.3.6": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "11.5.1",
-          "FluentValidation.DependencyInjectionExtensions": "11.5.1"
+          "FluentValidation": "10.3.6",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.6"
         },
         "compile": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
+          "lib/net6.0/FluentValidation.AspNetCore.dll": {
             "related": ".xml"
           }
         },
@@ -51,10 +51,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "FluentValidation.DependencyInjectionExtensions/11.5.1": {
+      "FluentValidation.DependencyInjectionExtensions/10.3.6": {
         "type": "package",
         "dependencies": {
-          "FluentValidation": "11.5.1",
+          "FluentValidation": "10.3.6",
           "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
         },
         "compile": {
@@ -92,7 +92,10 @@
       },
       "Consult.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Consult.Core.Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Consult.Core.dll": {}
         },
@@ -102,7 +105,7 @@
       },
       "Consult.Core.Shared/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/Consult.Core.Shared.dll": {}
         },
@@ -113,54 +116,52 @@
     }
   },
   "libraries": {
-    "AutoMapper/12.0.1": {
-      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+    "AutoMapper/11.0.1": {
+      "sha512": "WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "type": "package",
-      "path": "automapper/12.0.1",
+      "path": "automapper/11.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "automapper.12.0.1.nupkg.sha512",
+        "automapper.11.0.1.nupkg.sha512",
         "automapper.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.dll",
         "lib/netstandard2.1/AutoMapper.xml"
       ]
     },
-    "FluentValidation/11.5.1": {
-      "sha512": "0h1Q5lNOLLyYTWMJmyNoMqhY4CBRvvUWvJP1R4F2CnmmzuWwvB0A8aVmw5+lOuwYnwUwCRrdeMLbc81F38ahNQ==",
+    "FluentValidation/10.3.6": {
+      "sha512": "iMd370ZDx6ydm8t7bIFdRbSKX0e42lpvCtifUSbTSXOk5iKjmgl7HU0PXBhIWQAyIRi3gCwfMI9luj8H6K+byw==",
       "type": "package",
-      "path": "fluentvalidation/11.5.1",
+      "path": "fluentvalidation/10.3.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.11.5.1.nupkg.sha512",
+        "fluentvalidation.10.3.6.nupkg.sha512",
         "fluentvalidation.nuspec",
         "lib/net5.0/FluentValidation.dll",
         "lib/net5.0/FluentValidation.xml",
         "lib/net6.0/FluentValidation.dll",
         "lib/net6.0/FluentValidation.xml",
-        "lib/net7.0/FluentValidation.dll",
-        "lib/net7.0/FluentValidation.xml",
         "lib/netstandard2.0/FluentValidation.dll",
         "lib/netstandard2.0/FluentValidation.xml",
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
-    "FluentValidation.AspNetCore/11.3.0": {
-      "sha512": "jtFVgKnDFySyBlPS8bZbTKEEwJZnn11rXXJ2SQnjDhZ56rQqybBg9Joq4crRLz3y0QR8WoOq4iE4piV81w/Djg==",
+    "FluentValidation.AspNetCore/10.3.6": {
+      "sha512": "xUgEjm+aqQPiVyZHmIq1HCShjlu17Rm1iV6yuL9CFWAl9YPvMxJL7vB+A1CqFUeWsx3LH8fM8ivA/5q5jPmcJg==",
       "type": "package",
-      "path": "fluentvalidation.aspnetcore/11.3.0",
+      "path": "fluentvalidation.aspnetcore/10.3.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+        "fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
         "fluentvalidation.aspnetcore.nuspec",
         "lib/net5.0/FluentValidation.AspNetCore.dll",
         "lib/net5.0/FluentValidation.AspNetCore.xml",
@@ -170,16 +171,16 @@
         "lib/netcoreapp3.1/FluentValidation.AspNetCore.xml"
       ]
     },
-    "FluentValidation.DependencyInjectionExtensions/11.5.1": {
-      "sha512": "iWM0LS1MDYX06pcjMEQKqHirl2zkjHlNV23mEJSoR1IZI7KQmTa0RcTtGEJpj5+iHvBCfrzP2mYKM4FtRKVb+A==",
+    "FluentValidation.DependencyInjectionExtensions/10.3.6": {
+      "sha512": "yMwmbr+sHP/VLRQPTBVcgbJmtP5PGmxzNsqVX7FccDRwDB2edP8XsXWLNTZ4UwrslU1qQUD07BNQLDh7WXzpNw==",
       "type": "package",
-      "path": "fluentvalidation.dependencyinjectionextensions/11.5.1",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "fluent-validation-icon.png",
-        "fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+        "fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
         "fluentvalidation.dependencyinjectionextensions.nuspec",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.dll",
         "lib/netstandard2.0/FluentValidation.DependencyInjectionExtensions.xml",
@@ -281,11 +282,11 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net6.0": [
       "Consult.Core >= 1.0.0",
       "Consult.Core.Shared >= 1.0.0",
-      "FluentValidation.AspnetCore >= 11.3.0",
-      "automapper >= 12.0.1"
+      "FluentValidation.AspNetCore >= 10.3.6",
+      "automapper >= 11.0.1"
     ]
   },
   "packageFolders": {
@@ -294,32 +295,32 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+      "projectUniqueName": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
       "projectName": "Consult.Manager",
-      "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+      "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
       "packagesPath": "C:\\Users\\jcvia\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\obj\\",
+      "outputPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jcvia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
-              "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
+            "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj": {
+              "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core.Shared\\Consult.Core.Shared.csproj"
             },
-            "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
-              "projectPath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Core\\Consult.Core.csproj"
+            "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj": {
+              "projectPath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Core\\Consult.Core.csproj"
             }
           }
         }
@@ -331,16 +332,16 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
-          "FluentValidation.AspnetCore": {
+          "FluentValidation.AspNetCore": {
             "target": "Package",
-            "version": "[11.3.0, )"
+            "version": "[10.3.6, )"
           },
           "automapper": {
             "target": "Package",
-            "version": "[12.0.1, )"
+            "version": "[11.0.1, )"
           }
         },
         "imports": [

@@ -6,35 +6,61 @@
     <members>
         <member name="M:Consult.WebApi.Controllers.PacientesController.Get">
             <summary>
-            Retorna todos os Pacientes cadastrados na base de Dados.
+              Retorna todos pacientes cadastrados na base.
             </summary>
-            <returns></returns>
         </member>
         <member name="M:Consult.WebApi.Controllers.PacientesController.Get(System.Int32)">
             <summary>
-            Retorna da base um Paciente pelo id 
+            Retorna um paciente consultado pelo id.
             </summary>
-            <param name="id" example="12">Id do Paciente</param>
+            <param name="id" example="123">Id do paciente.</param>
         </member>
-        <member name="M:Consult.WebApi.Controllers.PacientesController.Post(Consult.Core.Shared.ModelViews.NovoPaciente)">
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Post(Consult.Core.Shared.ModelViews.Paciente.NovoPaciente)">
             <summary>
-            Insere um novo Paciente.
+            Insere um novo paciente
             </summary>
             <param name="novoPaciente"></param>
         </member>
-        <member name="M:Consult.WebApi.Controllers.PacientesController.Put(Consult.Core.Shared.ModelViews.AlteraPaciente)">
+        <member name="M:Consult.WebApi.Controllers.PacientesController.Put(Consult.Core.Shared.ModelViews.Paciente.AlteraPaciente)">
             <summary>
-            Altera um Paciente.
+            Altera um paciente.
             </summary>
             <param name="alteraPaciente"></param>
-            <returns></returns>
         </member>
         <member name="M:Consult.WebApi.Controllers.PacientesController.Delete(System.Int32)">
             <summary>
-            Exclui um Paciente.
+            Exclui um paciente.
             </summary>
-            <param name="id" example="12">Id do Paciente</param>
-            <remarks>Ao remover um Paciente ele será excluido permanentemente da base de Dados.</remarks>
+            <param name="id" example="123">Id do paciente</param>
+            <remarks>Ao excluir um paciente o mesmo será removido permanentemente da base.</remarks>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.MedicosController.Get">
+            <summary>
+            Retorna todos os médicos.
+            </summary>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.MedicosController.Get(System.Int32)">
+            <summary>
+            Retorna um médico consultado via ID
+            </summary>
+            <param name="id" example="123">Id do médico</param>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.MedicosController.Post(Consult.Core.Shared.ModelViews.Medico.NovoMedico)">
+            <summary>
+            Insere um novo médico.
+            </summary>
+            <param name="medico"></param>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.MedicosController.Put(Consult.Core.Shared.ModelViews.Medico.AlteraMedico)">
+            <summary>
+            Altera um médico
+            </summary>
+        </member>
+        <member name="M:Consult.WebApi.Controllers.MedicosController.DeleteAsync(System.Int32)">
+            <summary>
+            Exclui um médico.
+            </summary>
+            <param name="id" example="123">Id do médico</param>
         </member>
     </members>
 </doc>

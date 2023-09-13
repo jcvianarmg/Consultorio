@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UT12Of+eKX7f7hpEaIy01tr5XRG9QzFe1t5hTk/MnOdsmDvwNH1e/79O5YBShTBVGvDljPcc9IWj+1WHa759TQ==",
+  "dgSpecHash": "ncDKmzJRI6hAa4Cal9v7jm9BiX/o09uNWVUjOxawWVRaDu0DqPt/4mi4L+yhRS0unbvK69FpKGeP3ESH0gm9Jw==",
   "success": true,
-  "projectFilePath": "D:\\Users\\jcvia\\source\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
+  "projectFilePath": "D:\\Users\\jcvia\\source\\repos\\Consultorio\\Consult.Manager\\Consult.Manager.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jcvia\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
-    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
-    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\jcvia\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.6\\fluentvalidation.aspnetcore.10.3.6.nupkg.sha512",
+    "C:\\Users\\jcvia\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.6\\fluentvalidation.dependencyinjectionextensions.10.3.6.nupkg.sha512",
     "C:\\Users\\jcvia\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\jcvia\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],

@@ -1,102 +1,111 @@
-﻿using Consult.Core.Domain;
-using Consult.Core.Shared.ModelViews;
-using Consult.Manager.Interfaces;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using Consult.Core.Shared.ModelViews.Paciente;
+using SerilogTimings;
 
+namespace Consult.WebApi.Controllers;
 
-namespace Consult.WebApi.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class PacientesController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class PacientesController : ControllerBase
+    private readonly IPacienteManager pacienteManager;
+    private readonly ILogger<PacientesController> logger;
+
+    public PacientesController(IPacienteManager pacienteManager, ILogger<PacientesController> logger)
     {
-        private readonly IPacienteManager pacienteManager;
-        private readonly ILogger<PacientesController> logger;
+        this.pacienteManager = pacienteManager;
+        this.logger = logger;
+    }
 
-        public PacientesController(IPacienteManager pacienteManager, ILogger<PacientesController> logger)
+    /// <summary>
+    /// Retorna todos pacientes cadastrados na base.
+    /// </summary>
+    [HttpGet]
+    [ProducesResponseType(typeof(PacienteView), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Get()
+    {
+        var pacientes = await pacienteManager.GetPacientesAsync();
+        if (pacientes.Any())
         {
-            this.pacienteManager = pacienteManager;
-            this.logger = logger;
+            return Ok(pacientes);
         }
-        
-        /// <summary>
-        /// Retorna todos os Pacientes cadastrados na base de Dados.
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [ProducesResponseType(typeof(Paciente), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get()
-        {
-            return Ok(await pacienteManager.GetPacientesAsync());
-        }
+        return NotFound();
+    }
 
-        /// <summary>
-        /// Retorna da base um Paciente pelo id 
-        /// </summary>
-        /// <param name="id" example="12">Id do Paciente</param>
-        [HttpGet("{id}")]
-        [ProducesResponseType(typeof(Paciente), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Get(int id)
+    /// <summary>
+    /// Retorna um paciente consultado pelo id.
+    /// </summary>
+    /// <param name="id" example="123">Id do paciente.</param>
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(PacienteView), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Get(int id)
+    {
+        var paciente = await pacienteManager.GetPacienteAsync(id);
+        if (paciente.Id == 0)
         {
-            return Ok(await pacienteManager.GetPacienteAsync(id));
+            return NotFound();
         }
+        return Ok(paciente);
+    }
 
-        /// <summary>
-        /// Insere um novo Paciente.
-        /// </summary>
-        /// <param name="novoPaciente"></param>
-        [HttpPost]
-        [ProducesResponseType(typeof(Paciente), StatusCodes.Status201Created)]
-        [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> Post(NovoPaciente novoPaciente)
-        {
-            logger.LogInformation("Objeto recebido {@novoPaciente}", novoPaciente);
-            var pacienteInserido = await pacienteManager.InsertPacienteAsync(novoPaciente);
-            return CreatedAtAction(nameof(Get), new { id = pacienteInserido.Id}, pacienteInserido);
-        }
+    /// <summary>
+    /// Insere um novo paciente
+    /// </summary>
+    /// <param name="novoPaciente"></param>
+    [HttpPost]
+    [ProducesResponseType(typeof(PacienteView), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Post(NovoPaciente novoPaciente)
+    {
+        logger.LogInformation("Objeto recebido {@novoPaciente}", novoPaciente);
 
-        /// <summary>
-        /// Altera um Paciente.
-        /// </summary>
-        /// <param name="alteraPaciente"></param>
-        /// <returns></returns>
-        [HttpPut]
-        [ProducesResponseType(typeof(Paciente), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> Put(AlteraPaciente alteraPaciente)
+        PacienteView pacienteInserido;
+        using (Operation.Time("Tempo de adição de um novo paciente."))
         {
-            var pacienteAtualizado = await pacienteManager.UpdatePacienteAsync(alteraPaciente);
-            if (pacienteAtualizado == null)
-            {
-                return NotFound();
-            }
-            return Ok(pacienteAtualizado);
+            logger.LogInformation("Foi requisitada a inserção de um novo paciente.");
+            pacienteInserido = await pacienteManager.InsertPacienteAsync(novoPaciente);
         }
+        return CreatedAtAction(nameof(Get), new { id = pacienteInserido.Id }, pacienteInserido);
+    }
 
-        /// <summary>
-        /// Exclui um Paciente.
-        /// </summary>
-        /// <param name="id" example="12">Id do Paciente</param>
-        /// <remarks>Ao remover um Paciente ele será excluido permanentemente da base de Dados.</remarks>
-        [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
-        [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult> Delete(int id)
+    /// <summary>
+    /// Altera um paciente.
+    /// </summary>
+    /// <param name="alteraPaciente"></param>
+    [HttpPut]
+    [ProducesResponseType(typeof(PacienteView), StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Put(AlteraPaciente alteraPaciente)
+    {
+        var pacienteAtualizado = await pacienteManager.UpdatePacienteAsync(alteraPaciente);
+        if (pacienteAtualizado == null)
         {
-            await pacienteManager.DeletePacienteAsync(id);
-            return NoContent();
+            return NotFound();
         }
+        return Ok(pacienteAtualizado);
+    }
+
+    /// <summary>
+    /// Exclui um paciente.
+    /// </summary>
+    /// <param name="id" example="123">Id do paciente</param>
+    /// <remarks>Ao excluir um paciente o mesmo será removido permanentemente da base.</remarks>
+    [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var pacienteExcliudo = await pacienteManager.DeletePacienteAsync(id);
+        if (pacienteExcliudo == null)
+        {
+            return NotFound();
+        }
+        return NoContent();
     }
 }

@@ -1,19 +1,17 @@
-﻿using Consult.Core.Shared.ModelViews;
-using Microsoft.AspNetCore.Mvc;
+﻿using Consult.Core.Shared.ModelViews.Erro;
 using System.Diagnostics;
 
-namespace Consult.WebApi.Controllers
+namespace Consult.WebApi.Controllers;
+
+[ApiExplorerSettings(IgnoreApi = true)]
+[ApiController]
+public class ErrorController : ControllerBase
 {
-    [ApiExplorerSettings(IgnoreApi = true)]
-    [ApiController]
-    public class ErrorController : ControllerBase
+    [Route("error")]
+    public ErrorResponse Error()
     {
-        [Route("error")]
-        public ErrorResponse Error()
-        {
-            Response.StatusCode = 500;
-            var id = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
-            return new ErrorResponse(id);
-        }
+        Response.StatusCode = 500;
+        var id = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
+        return new ErrorResponse(id);
     }
 }

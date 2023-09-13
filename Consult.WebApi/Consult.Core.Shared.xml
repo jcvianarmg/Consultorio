@@ -4,56 +4,55 @@
         <name>Consult.Core.Shared</name>
     </assembly>
     <members>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoEndereco.CEP">
-            <example>49000000</example>
-        </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoEndereco.Cidade">
-            <example>Aracaju</example>
-        </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoEndereco.Logradouro">
-            <example>Rua A</example>
-        </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoEndereco.Numero">
-            <example>15</example>
-        </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoEndereco.Complemento">
-            <example>Ao lado do posto</example>
-        </member>
-        <member name="T:Consult.Core.Shared.ModelViews.NovoPaciente">
+        <member name="T:Consult.Core.Shared.ModelViews.Paciente.NovoPaciente">
             <summary>
-            Objeto utilizado para inserir um novo Paciente.
+            Objeto utilizado para inserção de um novo paciente.
             </summary>
-            
         </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoPaciente.Nome">
+        <member name="P:Consult.Core.Shared.ModelViews.Paciente.NovoPaciente.Nome">
             <summary>
-            Novo paciente
+            Nome do paciente
             </summary>
-            <example>Recrutrador Técnico</example> 
+            <example>João do Caminhão</example>
         </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoPaciente.DataNascimento">
+        <member name="P:Consult.Core.Shared.ModelViews.Paciente.NovoPaciente.DataNascimento">
             <summary>
-            Data do nascimento do Paciente.
+            Data do nascimento do paciente.
             </summary>
-            <example>1990-01-01</example>
+            <example>1980-01-01</example>
         </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoPaciente.Sexo">
+        <member name="P:Consult.Core.Shared.ModelViews.Paciente.NovoPaciente.Sexo">
             <summary>
-            Sexo do Paciente
+            Sexo do paciente
             </summary>
             <example>M</example>
         </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoPaciente.Documento">
+        <member name="P:Consult.Core.Shared.ModelViews.Paciente.NovoPaciente.Documento">
             <summary>
-            Documento do Paciente: RG, CPF,CNH 
+            Documento do paciente: CNH, CPF, RG
             </summary>
-            <example>12333331312</example>
+            <example>12341231312</example>
         </member>
-        <member name="P:Consult.Core.Shared.ModelViews.NovoTelefone.Numero">
+        <member name="P:Consult.Core.Shared.ModelViews.Endereco.NovoEndereco.CEP">
+            <example>49000000</example>
+        </member>
+        <member name="P:Consult.Core.Shared.ModelViews.Endereco.NovoEndereco.Cidade">
+            <example>Aracaju</example>
+        </member>
+        <member name="P:Consult.Core.Shared.ModelViews.Endereco.NovoEndereco.Logradouro">
+            <example>Rua A</example>
+        </member>
+        <member name="P:Consult.Core.Shared.ModelViews.Endereco.NovoEndereco.Numero">
+            <example>15</example>
+        </member>
+        <member name="P:Consult.Core.Shared.ModelViews.Endereco.NovoEndereco.Complemento">
+            <example>Ao lado do posto</example>
+        </member>
+        <member name="P:Consult.Core.Shared.ModelViews.Telefone.NovoTelefone.Numero">
             <summary>
-            Telefone do Paciente
+            Telefone do paciente
             </summary>
-            <example>88789878988</example>
+            <example>79999887744</example>
         </member>
     </members>
 </doc>

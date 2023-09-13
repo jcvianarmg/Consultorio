@@ -1,0 +1,100 @@
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.deps.json
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.pdb
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.pdb
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.xml
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfo.cs
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CopyComplete
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\refint\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\Consultorio_Core\Consult.Data\obj\Debug\net6.0\ref\Consult.Data.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.deps.json
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.pdb
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.pdb
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.pdb
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.pdb
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.xml
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.AssemblyReference.cache
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfoInputs.cache
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfo.cs
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CoreCompileInputs.cache
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CopyComplete
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\refint\Consult.Data.dll
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.pdb
+D:\Net Core - Criando uma aplicação corporativa\Consultorio_Core\Consult.Data\obj\Debug\net6.0\ref\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.deps.json
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.pdb
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Manager.pdb
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.xml
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfo.cs
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CopyComplete
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\refint\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\repos\Consultorio_Core\Consult.Data\obj\Debug\net6.0\ref\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.deps.json
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Manager.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.pdb
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Manager.pdb
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.xml
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfo.cs
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CopyComplete
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\refint\Consult.Data.dll
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\Consultorio\Consult.Data\obj\Debug\net6.0\ref\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.deps.json
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Manager.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Manager.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\bin\Debug\net6.0\Consult.Core.Shared.xml
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.AssemblyReference.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfoInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.AssemblyInfo.cs
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CoreCompileInputs.cache
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.csproj.CopyComplete
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\refint\Consult.Data.dll
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\Consult.Data.pdb
+D:\Users\jcvia\source\repos\Consultorio\Consult.Data\obj\Debug\net6.0\ref\Consult.Data.dll

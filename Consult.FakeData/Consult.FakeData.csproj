@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Consult.Core.Shared\Consult.Core.Shared.csproj" />
+    <ProjectReference Include="..\Consult.Core\Consult.Core.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Bogus"/>
+		<Using Include="Consult.Core.Domain"/>
+	</ItemGroup>
+</Project>

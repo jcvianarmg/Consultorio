@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
+﻿namespace Consult.Core.Domain;
 
-namespace Consult.Core.Domain
+public class Especialidade
 {
-    public class Especialidade
-    {
-        public int Id { get; set; }
-        public string Descricao { get; set; }
+    public int Id { get; set; }
+    public string Descricao { get; set; }
 
-        public ICollection<Medico> Medicos { get; set; }
-    }
+    public ICollection<Medico> Medicos { get; set; }
 }
