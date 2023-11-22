@@ -1,5 +1,7 @@
 # Consultório
 
+ Atualizado de  Net 3.1 para Net 6.0;
+
   Histórico
   
  Inicio core 3.1; 
@@ -32,6 +34,6 @@
  
  Autenticação com JWT;
  
- Migrando do Net  3.1 para 6.0;
+
 
 
